@@ -13,6 +13,12 @@ Use cases:
 
 Requirements: Microsoft Windows OS, NodeJS version >= 14. Architecture: x64 or ia32.
 
+## Disclaimer
+
+This is a fork of [node-expose-sspi](https://github.com/jlguenego/node-expose-sspi) that uses an updated version of `node-fetch`.
+The old version of `node-fetch` in the upstream repository is affected by [CVE-2022-0235](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0235).
+There are no other substantial changes compared to the upstream repository.
+
 ## Reference
 
  - [Complete reference guide](./doc/reference/index.md)

@@ -14,6 +14,7 @@
     "noUnusedLocals": true,
     "sourceMap": true,
     "strict": true,
+    "useUnknownInCatchVariables": false,
     "noImplicitReturns": true,
     "pretty": true,
     "target": "es2018"

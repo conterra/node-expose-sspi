@@ -32,6 +32,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "node-gyp rebuild -j 8 && node ./scripts/move-binary.js",
+    "build-incremental": "node-gyp build -j 8 && node ./scripts/move-binary.js",
     "build:arch": "ts-node ./scripts/build.ts",
     "build:doc": "typedoc ./src/sso ./lib",
     "build:ts": "tsc -p src",
@@ -67,6 +68,7 @@
     "@types/http-errors": "^1.8.0",
     "@types/mocha": "^7.0.2",
     "@types/serve-index": "^1.7.30",
+    "@types/node": "^14.18.12",
     "ejs": "^3.1.5",
     "eslint-plugin-mocha": "^8.1.0",
     "express": "^4.17.1",
@@ -86,10 +88,10 @@
     "ts-node": "^9.1.1",
     "typedoc": "^0.17.8",
     "typedoc-plugin-markdown": "^2.4.2",
-    "typescript": "^4.2.3"
+    "typescript": "^4.6.3"
   },
   "engines": {
-    "node": ">=12.16.1"
+    "node": ">=14.0.0"
   },
   "os": [
     "win32"

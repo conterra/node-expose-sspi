@@ -266,7 +266,11 @@ void initFlags() {
   FLAG_INSERT(ewxMap, EWX_RESTARTAPPS);
   FLAG_INSERT(ewxMap, EWX_HYBRID_SHUTDOWN);
   FLAG_INSERT(ewxMap, EWX_BOOTOPTIONS);
-  FLAG_INSERT(ewxMap, EWX_ARSO);
+  // Constant is not found on my machine.
+  // I could not find any documentation for this value, except for an auto generated
+  // rust library by microsoft which only mentions this by constant name and value:
+  // https://microsoft.github.io/windows-docs-rs/doc/windows/Win32/UI/WindowsAndMessaging/constant.EWX_ARSO.html#
+  // FLAG_INSERT(ewxMap, EWX_ARSO);
 
   FLAG_INSERT(shutdownReasonMap, SHTDN_REASON_FLAG_USER_DEFINED);
   FLAG_INSERT(shutdownReasonMap, SHTDN_REASON_FLAG_PLANNED);

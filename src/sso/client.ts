@@ -1,12 +1,12 @@
-import fetch, { RequestInit, Response } from 'node-fetch';
+import type { RequestInit, Response } from 'node-fetch';
 import http from 'http';
 import https from 'https';
-import { URL } from 'url';
 import dbg from 'debug';
 
 import { HandlerFactory } from './client/HandlerFactory';
 import { ClientCookie } from './client/ClientCookie';
 import { ClientInfo } from './client/ClientInfo';
+import { loadNodeFetch } from './loadNodeFetch';
 import { SecuritySupportProvider } from '..';
 
 const debug = dbg('node-expose-sspi:client');
@@ -83,6 +83,7 @@ export class Client {
   async fetch(resource: string, init?: RequestInit): Promise<Response> {
     const initKeepAlive = { ...init, agent: this.agent };
     this.clientCookie.restituteCookies(initKeepAlive);
+    const { fetch } = await loadNodeFetch();
     const response = await fetch(resource, initKeepAlive);
     const result = await this.handleAuth(response, resource, initKeepAlive);
     return result;

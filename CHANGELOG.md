@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.0] TDB
+
+* Restrict supported node version to >= 14
+
 ### [0.1.59](https://github.com/jlguenego/node-expose-sspi/compare/v0.1.58...v0.1.59) (2021-07-23)
 
 ### [0.1.58](https://github.com/jlguenego/node-expose-sspi/compare/v0.1.57...v0.1.58) (2021-06-05)

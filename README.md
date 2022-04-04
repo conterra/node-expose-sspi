@@ -11,7 +11,7 @@ Use cases:
 - **NTLM** and **Kerberos** SSO authentication, both server and client inside a private windows organization network, for instance an ERP in a private company.
 - **Active Directory** access to users for detailed info.
 
-Requirements: Microsoft Windows OS, NodeJS version >=12.16.1. Architecture: x64 or ia32.
+Requirements: Microsoft Windows OS, NodeJS version >= 14. Architecture: x64 or ia32.
 
 ## Reference
 

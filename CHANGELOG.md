@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### [0.2.0] TDB
 
 * Restrict supported node version to >= 14
+* Use node-fetch 3.2.3 to resolve security vulnerability
 
 ### [0.1.59](https://github.com/jlguenego/node-expose-sspi/compare/v0.1.58...v0.1.59) (2021-07-23)
 

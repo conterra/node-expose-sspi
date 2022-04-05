@@ -2,7 +2,7 @@ import dbg from 'debug';
 import type { RequestInit, Response } from 'node-fetch';
 import { URL } from 'url';
 import { Props } from '../../../lib/api';
-import { loadNodeFetch } from '../loadNodeFetch';
+import { fetch } from './fetch';
 
 import { AbstractHandler } from './AbstractHandler';
 import { ClientCookie } from './ClientCookie';
@@ -110,7 +110,6 @@ export class DigestHandler extends AbstractHandler {
     };
     clientCookie.restituteCookies(requestInit);
     debug('first requestInit.headers', requestInit.headers);
-    const { fetch } = await loadNodeFetch();
     response = await fetch(resource, requestInit);
     debug('first response.headers', response.headers);
     clientCookie.saveCookies(response);

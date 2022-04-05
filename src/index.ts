@@ -14,5 +14,6 @@ if (process.version < 'v12.16.1') {
   );
 }
 
+export { setFetchImpl } from './sso/client/fetch';
 export * from '../lib/api';
 export * from './sso/index';

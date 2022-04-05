@@ -1,6 +1,6 @@
 {
   "name": "@conterra/node-expose-sspi",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Expose the Microsoft Windows SSPI interface in order to do NTLM and Kerberos authentication.",
   "keywords": [
     "SSPI",
